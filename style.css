@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Text", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(13, 31%, 94%);
+}
+.container {
+  max-width: 1500px;
+  display: flex;
+  margin-top: 2em;
+  justify-content: center;
+  background-color: hsl(13, 31%, 94%);
+  border-radius: 10px;
+  position: relative;
+}
+/*---------Order Completed---------*/
+.order-completed-modal {
+  width: 450px;
+  height: 500px;
+  position: absolute;
+  translate: Y(50%);
+  top: 15%;
+  background-color: hsl(20, 50%, 98%);
+  border-radius: 8px;
+  padding: 1.8em;
+  z-index: 10;
+}
+
+.container h2 {
+  margin-left: 0.5em;
+  color: hsl(14, 65%, 9%);
+}
+.product-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  position: relative;
+  background-color: hsl(13, 31%, 94%);
+}
+
+.product {
+  margin-bottom: 1em;
+  margin: 8px;
+  width: 240px;
+  height: 300px;
+  position: relative;
+}
+
+.product img {
+  width: 100%;
+  height: 75%;
+  border-radius: 5%;
+  object-fit: cover;
+  position: relative;
+}
+.add-cart-section {
+  margin-left: 8px;
+  width: 280px;
+  height: 400px;
+  background-color: hsl(20, 50%, 98%);
+  border-radius: 0.5em;
+  padding: 1em;
+}
+.add-cart-section h3,
+span {
+  color: hsl(14, 86%, 42%);
+}
+.empty-cart-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*---------------------------*/
+/*will be hidden after clicked*/
+.add-cart {
+  border: 1px solid hsl(12, 20%, 44%);
+  background-color: hsl(20, 50%, 98%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  left: 3.2em;
+  top: 13.2em;
+  width: 8.2rem;
+  height: 2rem;
+}
+.add-cart h5 {
+  color: hsl(14, 65%, 9%);
+}
+/*----------------------*/
+/*will be displayed after add-cart clicked*/
+.order-count {
+  background-color: hsl(14, 86%, 42%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  left: 3.2em;
+  top: 13.2em;
+  width: 8.2rem;
+  height: 2rem;
+}
+.order-count h5 {
+  color: hsl(20, 50%, 98%);
+  font-weight: 400;
+}
+/*---------this is for increment and decrement--*/
+.subtract-order,
+.add-order {
+  display: inline-block;
+  border: 1px solid hsl(20, 50%, 98%);
+  border-radius: 50%;
+  margin: 0.5em;
+  text-align: center;
+  padding: 0.1em;
+  font-size: 10px;
+}
+span img {
+  vertical-align: middle;
+  padding: 0.1em;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/*-----details section---*/
+.details-section {
+  margin-top: 1.2em;
+  line-height: 1.4em;
+}
+.details-section p {
+  color: hsl(14, 65%, 9%);
+  font-weight: 600;
+  font-style: normal;
+}
+.details-section h5 {
+  color: hsl(12, 20%, 44%);
+  font-weight: 400;
+}
+.details-section h4 {
+  color: hsl(14, 86%, 42%);
+  font-weight: 500;
+}
+/*--------------------------*/
+.price-details-section {
+  display: flex;
+  width: 80%;
+}
+.price-details-section .pricing {
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+.order-list {
+  position: relative;
+  padding: 0.5rem;
+  border-bottom: 1px solid hsl(14, 25%, 72%);
+}
+.order-list .order-counts {
+  color: hsl(14, 86%, 42%);
+}
+.order-list .pricing,
+.total-pricing {
+  color: hsl(12, 20%, 44%);
+  font-weight: 400;
+}
+.order-list .close-img {
+  position: absolute;
+  margin: 0.2em;
+  right: 0.5rem;
+  top: 1rem;
+  border-radius: 50%;
+  width: 0.8rem;
+  border-radius: 50%;
+  border: 1px solid hsl(12, 20%, 44%);
+  cursor: pointer;
+  padding: 2px;
+}
+.total-amount-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.total-amount-box p {
+  font-size: 12px;
+  color: hsl(12, 20%, 44%);
+  font-weight: 500;
+}
+.total-amount-box h5 {
+  color: hsl(14, 65%, 9%);
+  font-weight: 700;
+}
+.carbon-box {
+  background-color: hsl(13, 31%, 94%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5em;
+  padding: 0.2em;
+}
+.carbon-box p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 0.5em;
+  color: hsl(12, 20%, 44%);
+}
+.carbon-box span {
+  font-size: 12px;
+  font-weight: 500;
+  color: hsl(14, 65%, 9%);
+}
+.confirm-btn {
+  margin-top: 1em;
+}
+#confirm-btn {
+  width: 100%;
+  padding: 0.8em;
+  background-color: hsl(14, 86%, 42%);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+#confirm {
+  color: hsl(20, 50%, 98%);
+  font-weight: 500;
+}
+#start-new-order-btn {
+  width: 100%;
+  padding: 0.8em;
+  background-color: hsl(14, 86%, 42%);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+#new-order-btn {
+  color: hsl(20, 50%, 98%);
+  font-weight: 500;
+}
+.order-confirmed p {
+  margin-bottom: 1em;
+}
+.order-completed-price {
+  margin-bottom: 0.2em;
+  padding: 0.5em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: hsl(13, 31%, 94%);
+  border-bottom: 1px solid hsl(14, 25%, 72%);
+}
+.thumbnail {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.order-item {
+  display: flex;
+  background-color: hsl(13, 31%, 94%);
+  border-bottom: 1px solid hsl(14, 25%, 72%);
+}
+.order-item .food-name {
+  display: flex;
+  flex-direction: column;
+}
+.food-name-price {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.order-item .price-details-section {
+  display: flex;
+  width: 100%;
+  margin-top: 1em;
+}
+.order-item .total-pricing {
+  margin-left: 15em;
+  font-weight: 500;
+  color: hsl(14, 65%, 9%);
+}
+.order-item .order-counts {
+  color: hsl(14, 86%, 42%);
+}
+.order-item .pricing {
+  font-weight: 400;
+  color: hsl(12, 20%, 44%);
+}
+.total-cost-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.total-cost-section h6 {
+  font-weight: 500;
+}
+.blur-background {
+  backdrop-filter: blur(20px);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
+  z-index: 5;
+}
+@media (max-width: 400px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .product {
+    margin: 8px;
+    width: 280px;
+    position: relative;
+  }
+  .product-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    position: relative;
+  }
+  .order-count {
+    left: 4.5em;
+  }
+  .add-cart {
+    left: 4.5em;
+  }
+  .add-cart-section {
+    margin-top: 2em;
+    height: 300px;
+  }
+  .order-completed-modal {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    translate: Y(50%);
+    top: 15%;
+    background-color: hsl(20, 50%, 98%);
+    border-radius: 8px;
+    padding: 1.8em;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 550%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(1px);
+    z-index: 5;
+  }
+}

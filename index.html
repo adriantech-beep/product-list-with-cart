@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product-List-Card-Main</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section>
+          <h2>Desserts</h2>
+          <div class="product-section">
+            <!----------first product------>
+            <div class="product wafffle">
+              <img src="images/image-waffle-desktop.jpg" alt="" width="180px" />
+              <!------this will be hidden uppon clicked--------->
+              <div class="add-cart">
+                <div class="cart">
+                  <img src="images/icon-add-to-cart.svg" alt="" width="10px" />
+                </div>
+                <h5>Add to cart</h5>
+              </div>
+              <!--this will be displayed after add-cart been clicked----->
+              <div class="order-count hidden">
+                <span id="waffle-minus" class="subtract-order"
+                  ><img src="images/icon-decrement-quantity.svg" alt=""
+                /></span>
+                <h5 class="display-count" id="waffle-count">0</h5>
+                <span id="waffle-plus" class="add-order"
+                  ><img src="images/icon-increment-quantity.svg" alt=""
+                /></span>
+              </div>
+              <div class="details-section">
+                <h5>Waffle</h5>
+                <p>Waffle with Berries</p>
+                <h4>$6.50</h4>
+              </div>
+            </div>
+            <!----------------second product------------>
+            <div class="product creme">
+              <img
+                src="images/image-creme-brulee-desktop.jpg"
+                alt=""
+                width="180px"
+              />
+
+              <!------this will be hidden uppon clicked--------->
+              <div class="add-cart">
+                <div class="cart">
+                  <img src="images/icon-add-to-cart.svg" alt="" width="10px" />
+                </div>
+                <h5>Add to cart</h5>
+              </div>
+
+              <!--this will be displayed after add-cart been clicked----->
+              <div class="order-count hidden">
+                <span class="subtract-order" id="creme-minus"
+                  ><img src="images/icon-decrement-quantity.svg" alt=""
+                /></span>
+                <h5 class="display-count" id="creme-count">0</h5>
+                <span class="add-order" id="creme-plus"
+                  ><img src="images/icon-increment-quantity.svg" alt=""
+                /></span>
+              </div>
+              <div class="details-section">
+                <h6>Crème Brûlée</h6>
+                <p>Vanilla Bean Crème Brûlée</p>
+                <h4>$7.00</h4>
+              </div>
+            </div>
+            <!------third product----------->
+            <div class="product macaron">
+              <img
+                src="images/image-macaron-desktop.jpg"
+                alt=""
+                width="180px"
+              />
+              <!------this will be hidden uppon clicked--------->
+              <div class="add-cart">
+                <div class="cart">
+                  <img src="images/icon-add-to-cart.svg" alt="" width="10px" />
+                </div>
+                <h5>Add to cart</h5>
+              </div>
+
+              <!--this will be displayed after add-cart been clicked----->
+              <div class="order-count hidden">
+                <span class="subtract-order" id="macaron-minus"
+                  ><img src="images/icon-decrement-quantity.svg" alt=""
+                /></span>
+                <h5 class="display-count" id="macaron-count">0</h5>
+                <span class="add-order" id="macaron-plus"
+                  ><img src="images/icon-increment-quantity.svg" alt=""
+                /></span>
+              </div>
+              <div class="details-section">
+                <h6>Macaron</h6>
+                <p>Macaron Mix of Five</p>
+                <h4>$8.00</h4>
+              </div>
+            </div>
+            <!-------fourth product------>
+            <div class="product tiramisu">
+              <img
+                src="images/image-tiramisu-desktop.jpg"
+                alt=""
+                width="180px"
+              />
+              <!------this will be hidden uppon clicked--------->
+              <div class="add-cart">
+                <div class="cart">
+                  <img src="images/icon-add-to-cart.svg" alt="" width="10px" />
+                </div>
+                <h5>Add to cart</h5>
+              </div>
+
+              <!--this will be displayed after add-cart been clicked----->
+              <div class="order-count hidden">
+                <span class="subtract-order" id="tiramisu-minus"
+                  ><img src="images/icon-decrement-quantity.svg" alt=""
+                /></span>
+                <h5 class="display-count" id="tiramisu-count">0</h5>
+                <span class="add-order" id="tiramisu-plus"
+                  ><img src="images/icon-increment-quantity.svg" alt=""
+                /></span>
+              </div>
+              <div class="details-section">
+                <h6>Tiramisu</h6>
+                <p>Classic Tiramisu</p>
+                <h4>$5.50</h4>
+              </div>
+            </div>
+            <!----------fifth product--------->
+            <div class="product baklava">
+              <img
+                src="images/image-baklava-desktop.jpg"
+                alt=""
+                width="180px"
+              />
+              <!------this will be hidden uppon clicked--------->
+              <div class="add-cart">
+                <div class="cart">
+                  <img src="images/icon-add-to-cart.svg" alt="" width="10px" />
+                </div>
+                <h5>Add to cart</h5>
+              </div>
+
+              <!--this will be displayed after add-cart been clicked----->
+              <div class="order-count hidden">
+                <span class="subtract-order" id="baklava-minus"
+                  ><img src="images/icon-decrement-quantity.svg" alt=""
+                /></span>
+                <h5 class="display-count" id="baklava-count">0</h5>
+                <span class="add-order" id="baklava-plus"
+                  ><img src="images/icon-increment-quantity.svg" alt=""
+                /></span>
+              </div>
+              <div class="details-section">
+                <h6>Baklava</h6>
+                <p>Pistachio Baklava</p>
+                <h4>$4.00</h4>
+              </div>
+            </div>
+            <!-------sixth product------->
+            <div class="product mirengue">
+              <img
+                src="images/image-meringue-desktop.jpg"
+                alt=""
+                width="180px"
+              />
+              <!------this will be hidden uppon clicked--------->
+              <div class="add-cart">
+                <div class="cart">
+                  <img src="images/icon-add-to-cart.svg" alt="" width="10px" />
+                </div>
+                <h5>Add to cart</h5>
+              </div>
+
+              <!--this will be displayed after add-cart been clicked----->
+              <div class="order-count hidden">
+                <span class="subtract-order" id="meringue-minus"
+                  ><img src="images/icon-decrement-quantity.svg" alt=""
+                /></span>
+                <h5 class="display-count" id="meringue-count">0</h5>
+                <span class="add-order" id="meringue-plus"
+                  ><img src="images/icon-increment-quantity.svg" alt=""
+                /></span>
+              </div>
+              <div class="details-section">
+                <h6>Pie</h6>
+                <p>Lemon Meringue Pie</p>
+                <h4>$5.00</h4>
+              </div>
+            </div>
+            <!------------seventh product----------->
+            <div class="product cake">
+              <img src="images/image-cake-desktop.jpg" alt="" width="180px" />
+              <!------this will be hidden uppon clicked--------->
+              <div class="add-cart">
+                <div class="cart">
+                  <img src="images/icon-add-to-cart.svg" alt="" width="10px" />
+                </div>
+                <h5>Add to cart</h5>
+              </div>
+
+              <!--this will be displayed after add-cart been clicked----->
+              <div class="order-count hidden">
+                <span class="subtract-order" id="cake-minus"
+                  ><img src="images/icon-decrement-quantity.svg" alt=""
+                /></span>
+                <h5 class="display-count" id="cake-count">0</h5>
+                <span class="add-order" id="cake-plus"
+                  ><img src="images/icon-increment-quantity.svg" alt=""
+                /></span>
+              </div>
+              <div class="details-section">
+                <h6>Cake</h6>
+                <p>Red Velvet Cake</p>
+                <h4>$4.50</h4>
+              </div>
+            </div>
+            <!------eight product------>
+            <div class="product brownie">
+              <img
+                src="images/image-brownie-desktop.jpg"
+                alt=""
+                width="180px"
+              />
+              <!------this will be hidden uppon clicked--------->
+              <div class="add-cart">
+                <div class="cart">
+                  <img src="images/icon-add-to-cart.svg" alt="" width="10px" />
+                </div>
+                <h5>Add to cart</h5>
+              </div>
+
+              <!--this will be displayed after add-cart been clicked----->
+              <div class="order-count hidden">
+                <span class="subtract-order" id="brownie-minus"
+                  ><img src="images/icon-decrement-quantity.svg" alt=""
+                /></span>
+                <h5 class="display-count" id="brownie-count">0</h5>
+                <span class="add-order" id="brownie-plus"
+                  ><img src="images/icon-increment-quantity.svg" alt=""
+                /></span>
+              </div>
+              <div class="details-section">
+                <h6>Brownie</h6>
+                <p>Salted Caramel Brownie</p>
+                <h4>$4.50</h4>
+              </div>
+            </div>
+            <!----------ninth product-------->
+            <div class="product panna">
+              <img
+                src="images/image-panna-cotta-desktop.jpg"
+                alt=""
+                width="180px"
+              />
+              <!------this will be hidden uppon clicked--------->
+              <div class="add-cart">
+                <div class="cart">
+                  <img src="images/icon-add-to-cart.svg" alt="" width="10px" />
+                </div>
+                <h5>Add to cart</h5>
+              </div>
+
+              <!--this will be displayed after add-cart been clicked----->
+              <div class="order-count hidden">
+                <span class="subtract-order" id="panna-minus"
+                  ><img src="images/icon-decrement-quantity.svg" alt=""
+                /></span>
+                <h5 class="display-count" id="panna-count">0</h5>
+                <span class="add-order" id="panna-plus"
+                  ><img src="images/icon-increment-quantity.svg" alt=""
+                /></span>
+              </div>
+              <div class="details-section">
+                <h6>Panna Cotta</h6>
+                <p>Vanilla Panna Cotta</p>
+                <h4>$6.50</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!----------add to cart---------->
+        <section>
+          <div class="add-cart-section">
+            <h3>Your Cart(<span id="order-list-count">0</span>)</h3>
+            <div class="empty-cart-section">
+              <img
+                class="empty-cart"
+                src="images/illustration-empty-cart.svg"
+                alt=""
+              />
+              <h6>Your added items will appear here</h6>
+            </div>
+            <div id="waffle-order-list-container" class="waffles"></div>
+            <div id="creme-order-list-container" class="cremes"></div>
+            <div id="macaron-order-list-container" class="macarons"></div>
+            <div id="tiramisu-order-list-container" class="tiramisus"></div>
+            <div id="baklava-order-list-container" class="baklavas"></div>
+            <div id="meringue-order-list-container" class="meringues"></div>
+            <div id="cake-order-list-container" class="cakes"></div>
+            <div id="brownie-order-list-container" class="brownies"></div>
+            <div id="panna-order-list-container" class="pannas"></div>
+
+            <div id="total-food-cost" class="food-cost">
+              <h2 id="total-amount"></h2>
+              
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-------------Modal Section------------>
+      <div class="order-completed-modal hidden">
+      </div>
+    </div>
+  </div>
+  <div class="overlay hidden"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
